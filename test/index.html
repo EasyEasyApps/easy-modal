@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OuiBounce Testing Page</title>
+    <!-- Load jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <!-- Add OuiBounce JS -->
+    <script src="../dist/tag.js"></script>
+    <script>
+    OuibounceTag({
+      modalClass: "modal",
+      dialogClass: "dialog",
+      backdropClass: "glass",
+      ouibounce: {
+        aggressive: true,
+        timer: 0,
+        callback: function() { console.log('ouibounce fired!') }
+      },
+      html: '<script type="text/javascript" src="http://inbound.easyeasyapps.net/form/generate.js?id=1"></script>'
+    });
+    </script>
+  </head>
+
+  <body>
+    <!-- Example page instructions -->
+    <h1>Try leaving this page to fire OuiBounce</h1>
+  </body>
+</html>

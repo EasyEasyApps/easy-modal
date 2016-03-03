@@ -1,0 +1,35 @@
+{
+  "name": "gtm-bounce",
+  "version": "0.0.1",
+  "description": "Show some subscription popup before visitors leave your site.",
+  "main": "build/gtm-bounce.js",
+  "directories": {
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/EasyEasyApps/gtm-bounce.git"
+  },
+  "author": "Easy Easy Apps",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EasyEasyApps/gtm-bounce/issues"
+  },
+  "homepage": "https://github.com/EasyEasyApps/gtm-bounce",
+  "dependencies": {
+    "ouibounce": "^0.0.11"
+  },
+  "peerDependencies": {
+    "jquery": "^2.2.1"
+  },
+  "devDependencies": {
+    "jquery": "^2.2.1",
+
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-browserify": "^0.5.1",
+    "stringify": "^5.0.0",
+    "jshint": "^2.9.1"
+  }
+}
