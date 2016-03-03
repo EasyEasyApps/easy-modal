@@ -2,21 +2,21 @@
   "name": "easy-modal",
   "version": "0.0.1",
   "description": "Show some subscription popup before visitors leave your site.",
-  "main": "build/gtm-bounce.js",
+  "main": "build/modal.js",
   "directories": {
   },
   "scripts": {
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/EasyEasyApps/gtm-bounce.git"
+    "url": "git://github.com/EasyEasyApps/easy-modal.git"
   },
   "author": "Easy Easy Apps",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EasyEasyApps/gtm-bounce/issues"
+    "url": "https://github.com/EasyEasyApps/easy-modal/issues"
   },
-  "homepage": "https://github.com/EasyEasyApps/gtm-bounce",
+  "homepage": "https://github.com/EasyEasyApps/easy-modal",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-jshint": "^2.0.0",
