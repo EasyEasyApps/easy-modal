@@ -25,10 +25,6 @@ Modal(document.getElementById("some-id"));
 
 Ouibounce offers a few options, such as:
 
-var  = opts["modalClass"];
-var dialogClass = opts["dialogClass"];
-var backdropClass = opts["backdropClass"];
-
 - [Modal CSS class](#modal-class)
 - [Dialog CSS class](#dialog-class)
 - [Backdrop CSS class](#"backdrop-class")

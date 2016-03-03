@@ -16,8 +16,7 @@ gulp.task('compile', function() {
 gulp.task('jshint', function() {
   gulp.src('src/**/*.js')
     .pipe( jshint( '.jshintrc' ) )
-    .pipe( jshint.reporter( stylish ) )
-    .pipe( jshint.reporter( 'fail' ) );
+    .pipe( jshint.reporter( 'default' ) );
 });
 
 gulp.task('build', ['jshint', 'compile']);

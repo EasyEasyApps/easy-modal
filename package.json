@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Show some subscription popup before visitors leave your site.",
   "main": "build/modal.js",
-  "directories": {
-  },
+  "files": [
+    "dist/modal.js"
+  ],
   "scripts": {
   },
   "repository": {
