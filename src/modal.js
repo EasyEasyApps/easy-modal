@@ -27,12 +27,14 @@ function show(el) {
 */
 
 module.exports = function(html_or_dom,options) {
+  var modal = strToDom(modalHtml);
+
   addEvent(window, 'load', function() {
-    var modal = document.body.appendChild(strToDom(modalHtml));
+    document.body.appendChild(modal);
     var modalDialog = modal.getElementsByClassName("__modal_dialog__")[0];
     var modalBackdrop = modal.getElementsByClassName("__modal_backdrop__")[0];
 
-    var dialogContentDOM = (typeof dialogContent === "string") ? strToDom(html_or_dom) : html_or_dom;
+    var dialogContentDOM = (typeof html_or_dom === "string") ? strToDom(html_or_dom) : html_or_dom;
     modalDialog.appendChild(dialogContentDOM);
 
     var opts = (typeof options === "undefined") ? {} : options;
@@ -77,4 +79,6 @@ module.exports = function(html_or_dom,options) {
       }
     });
   });
+  
+  return modal;
 };

@@ -1,15 +1,12 @@
 var gulp      = require('gulp'),
     jshint    = require('gulp-jshint'),
-    stylish   = require('jshint-stylish'),
-
-    browserify = require('gulp-browserify'),
-    stringify = require('stringify');
+    browserify = require('gulp-browserify');
 
 gulp.task('compile', function() {
   gulp.src('src/**/*.js')
   .pipe(browserify({
-    standalone: "OuibounceTag",
-    transform: ['stringify']
+    standalone: "Modal",
+    transform: ['stringify', 'uglifyify']
   }))
   .pipe(gulp.dest('dist'))
 });

@@ -2,22 +2,16 @@
 <html>
   <head>
     <title>OuiBounce Testing Page</title>
-    <!-- Load jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
     <!-- Add OuiBounce JS -->
-    <script src="../dist/tag.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.11/ouibounce.min.js"></script>
+    <script src="../dist/modal.js"></script>
     <script>
-    OuibounceTag({
-      modalClass: "modal",
-      dialogClass: "dialog",
-      backdropClass: "glass",
-      ouibounce: {
-        aggressive: true,
-        timer: 0,
-        callback: function() { console.log('ouibounce fired!') }
-      },
-      html: '<script type="text/javascript" src="http://inbound.easyeasyapps.net/form/generate.js?id=1"></script>'
+    var modal = Modal("<h1>Hello</h1>");
+
+    ouibounce(modal, {
+      aggressive: true,
+      timer: 0,
+      callback: function() { console.log('ouibounce fired!') }
     });
     </script>
   </head>
