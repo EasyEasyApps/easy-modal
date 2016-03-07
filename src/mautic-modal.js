@@ -21,7 +21,6 @@ var MauticSubscribeModal = function(html_or_dom, options) {
 
   if (typeof window.MauticSDKLoaded === 'undefined') {
     Utils.addEvent(window, "load", function() {
-      console.log("window.load MauticSDK");
       window.MauticSDK.onLoad();
     });
     window.MauticSDKLoaded = true;
