@@ -1,10 +1,10 @@
 {
   "name": "easy-modal",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Show some subscription popup before visitors leave your site.",
-  "main": "build/modal.js",
+  "main": "build/mautic-subscribe-modal.js",
   "files": [
-    "dist/modal.js"
+    "dist"
   ],
   "scripts": {
   },
@@ -18,10 +18,14 @@
     "url": "https://github.com/EasyEasyApps/easy-modal/issues"
   },
   "homepage": "https://github.com/EasyEasyApps/easy-modal",
+  "dependencies": {
+    "ouibounce": "^0.0.11"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-jshint": "^2.0.0",
     "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^2.0.3",
     "stringify": "^5.0.0",
     "uglifyify": "^3.0.1",
     "jshint": "^2.9.1"

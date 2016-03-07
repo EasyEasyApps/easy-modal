@@ -1,11 +1,21 @@
 var gulp      = require('gulp'),
     jshint    = require('gulp-jshint'),
+    cleanCSS = require('gulp-clean-css'),
     browserify = require('gulp-browserify');
 
+gulp.task('minify-css', function() {
+  gulp.src('src/styles/**/*.css')
+  .pipe(cleanCSS({debug: true, compatibility: 'ie8'}, function(details) {
+    console.log(details.name + ': ' + details.stats.originalSize);
+    console.log(details.name + ': ' + details.stats.minifiedSize);
+  }))
+  .pipe(gulp.dest('dist/css'));
+});
+
 gulp.task('compile', function() {
-  gulp.src('src/**/*.js')
+  gulp.src('src/mautic-modal.js')
   .pipe(browserify({
-    standalone: "Modal",
+    standalone: "MauticModal",
     transform: ['stringify', 'uglifyify']
   }))
   .pipe(gulp.dest('dist'))
@@ -19,7 +29,7 @@ gulp.task('jshint', function() {
     .pipe( jshint.reporter( 'default' ) );
 });
 
-gulp.task('build', ['jshint', 'compile']);
+gulp.task('build', ['jshint', 'compile', 'minify-css']);
 /*
 , function() {
     gulp.src('src/tag.js')
