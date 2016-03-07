@@ -1,12 +1,12 @@
-# Ouibounce
+# Easy Modal
 
-Ouibounce: A small JS library that allows a user to create modals with custom markup.
+A small JS library that allows a user to create modals controlled by Ouibounce and that loads Mautic forms.
 
 ## Installation
 
 You have a few options to choose from:
 
-- Download the [minified](dist/modal.js) script and include it on your page
+- Download the [minified](dist/mautic-modal.js) script and include it on your page
 - Use NPM: `npm install easy-modal`
 
 ## Usage
