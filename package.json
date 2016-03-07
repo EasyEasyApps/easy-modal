@@ -1,8 +1,8 @@
 {
   "name": "easy-modal",
-  "version": "0.0.5",
-  "description": "Show some subscription popup before visitors leave your site.",
-  "main": "build/mautic-subscribe-modal.js",
+  "version": "0.0.6",
+  "description": "Show a popup with a Mautic form before visitors leave your site.",
+  "main": "dist/mautic-modal.js",
   "files": [
     "dist"
   ],
