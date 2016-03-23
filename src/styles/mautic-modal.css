@@ -110,6 +110,28 @@
   line-height: 1.3333333;
   border-radius: 6px
 }
+
+select.form-control,
+input[type="date"].form-control,
+input[type="datetime"].form-control,
+input[type="datetime-local"].form-control,
+input[type="month"].form-control,
+input[type="week"].form-control,
+input[type="time"].form-control {
+  width: 100%;
+  display: block;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjVweCIgdmlld0JveD0iMCAwIDEwIDUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEwIDU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBwb2ludHM9IjUsNSAwLDAgMTAsMCAiLz48L3N2Zz4=);
+  background-position: 95% center;
+  background-position: -webkit-calc(100% - 15px) center;
+  background-position: -moz-calc(100% - 15px) center;
+  background-position: calc(100% - 15px) center;
+  background-repeat: no-repeat;
+  background-size: 10px 5px;
+  padding: 0 25px 0 10px !important;
+}
 .text-right {
   text-align: right;
 }
