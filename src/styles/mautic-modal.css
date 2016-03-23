@@ -132,6 +132,10 @@ input[type="time"].form-control {
   background-size: 10px 5px;
   padding: 0 25px 0 10px !important;
 }
+/* Error messages on forms */
+.mauticform-errormsg {
+  color: red;
+}
 .text-right {
   text-align: right;
 }
