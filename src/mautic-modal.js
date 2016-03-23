@@ -55,7 +55,7 @@ var MauticSubscribeModal = function(html_or_dom, options) {
     };
   }
 
-  ouibounce(modal, ouibounceOptions);
+  return ouibounce(modal, ouibounceOptions);
 };
 
 module.exports = MauticSubscribeModal;
